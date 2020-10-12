@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPriority"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_alignParentEnd="true"
+            tools:ignore="RtlCompat"
+            android:text="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitle"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="Title"
+            android:maxLines="1"
+            android:layout_toStartOf="@+id/txtPriority"
+            android:layout_alignParentStart="true"
+            tools:ignore="RtlCompat"
+            android:ellipsize="end"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDescription"
+            android:layout_below="@+id/txtTitle"
+            android:text="Description"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
